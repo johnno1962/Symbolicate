@@ -14,7 +14,6 @@
 		BBBCB3B518B0639200F59FF1 /* ASDocument.m in Sources */ = {isa = PBXBuildFile; fileRef = BBBCB3B418B0639200F59FF1 /* ASDocument.m */; };
 		BBBCB3B818B0639200F59FF1 /* ASDocument.xib in Resources */ = {isa = PBXBuildFile; fileRef = BBBCB3B618B0639200F59FF1 /* ASDocument.xib */; };
 		BBBCB3BB18B0639200F59FF1 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = BBBCB3B918B0639200F59FF1 /* MainMenu.xib */; };
-		BBBCB3BD18B0639200F59FF1 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BBBCB3BC18B0639200F59FF1 /* Images.xcassets */; };
 		BBBCB3C418B0639200F59FF1 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BBBCB3C318B0639200F59FF1 /* XCTest.framework */; };
 		BBBCB3C518B0639200F59FF1 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BBBCB3A118B0639200F59FF1 /* Cocoa.framework */; };
 		BBBCB3CD18B0639200F59FF1 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = BBBCB3CB18B0639200F59FF1 /* InfoPlist.strings */; };
@@ -49,7 +48,6 @@
 		BBBCB3B418B0639200F59FF1 /* ASDocument.m */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.objcpp; path = ASDocument.m; sourceTree = "<group>"; };
 		BBBCB3B718B0639200F59FF1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/ASDocument.xib; sourceTree = "<group>"; };
 		BBBCB3BA18B0639200F59FF1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
-		BBBCB3BC18B0639200F59FF1 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		BBBCB3C218B0639200F59FF1 /* SymbolicateTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SymbolicateTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		BBBCB3C318B0639200F59FF1 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		BBBCB3CA18B0639200F59FF1 /* SymbolicateTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "SymbolicateTests-Info.plist"; sourceTree = "<group>"; };
@@ -132,7 +130,6 @@
 				BBBCB3B418B0639200F59FF1 /* ASDocument.m */,
 				BBBCB3B618B0639200F59FF1 /* ASDocument.xib */,
 				BBBCB3B918B0639200F59FF1 /* MainMenu.xib */,
-				BBBCB3BC18B0639200F59FF1 /* Images.xcassets */,
 				BBBCB3A818B0639200F59FF1 /* Supporting Files */,
 			);
 			path = Symbolicate;
@@ -256,7 +253,6 @@
 			files = (
 				BBBCB3E118B0737A00F59FF1 /* symbolicate.pl in Resources */,
 				BBBCB3B818B0639200F59FF1 /* ASDocument.xib in Resources */,
-				BBBCB3BD18B0639200F59FF1 /* Images.xcassets in Resources */,
 				BBBCB3AC18B0639200F59FF1 /* InfoPlist.strings in Resources */,
 				BBBCB3DB18B0641300F59FF1 /* App.icns in Resources */,
 				BBBCB3B218B0639200F59FF1 /* Credits.rtf in Resources */,
