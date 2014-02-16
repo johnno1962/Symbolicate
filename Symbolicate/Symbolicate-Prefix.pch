@@ -1,0 +1,13 @@
+//
+//  Prefix header
+//
+//  The contents of this file are implicitly included at the beginning of every source file.
+//
+
+#ifdef __OBJC__
+    #import <Cocoa/Cocoa.h>
+#endif
+
+#ifdef __OBJC__
+    #import "/Applications/Objective-C++.app/Contents/Resources/IncludeV5.0/Foundation++.h"
+#endif
