@@ -9,8 +9,6 @@
 use IPC::Open2;
 use strict;
 
-#print "h\nh\nh\nh\nh\nh\n"; die ">>> @ARGV";
-
 my ($crash, $archive) = @ARGV;
 my ($app, $ident, $pid, $llin, $llout);
 
@@ -18,6 +16,7 @@ open CRASH, "< $crash" or die "Could not open '$crash' as: $!";
 
 while ( my $line = <CRASH> ) {
     chomp $line;
+
     if ( $line =~ m@^Path:.*/MacOS/([^/]+)$@ ) {
         $app = $1;
 

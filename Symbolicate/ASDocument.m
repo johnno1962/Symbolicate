@@ -74,17 +74,18 @@
 
 - (void)awakeFromNib {
     if ( [self fileURL] )
-        text.string = OOFile( [self fileURL] ).string();
+        text.string = [NSString stringWithContentsOfURL:[self fileURL] usedEncoding:NULL error:NULL];
 }
 
 - (void)symbolicate:(NSString *)archive {
-    OOString script = [[NSBundle mainBundle] resourcePath]+OO"/symbolicate.pl",
-        command = @"'"+script+@"' '"+[[self fileURL] path]+@"' '"+archive+@"'", out;
-    FILE *in = popen(command, "r");
+    NSString *script = [[[NSBundle mainBundle] resourcePath] stringByAppendingPathComponent:@"symbolicate.pl"],
+        *command = [NSString stringWithFormat:@"'%@' '%@' '%@'", script, [[self fileURL] path], archive];
+    NSMutableString *out = [NSMutableString new];
+    FILE *in = popen([command UTF8String], "r");
 
     char buffer[PATH_MAX];
     while ( fgets( buffer, sizeof buffer, in ) )
-        out += OOString( buffer );
+        [out appendString:[NSString stringWithUTF8String:buffer]];
 
     pclose( in );
     text.string = out;
